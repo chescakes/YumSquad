@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Light blue background */
+
+
+}
+
+
+img {
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  vertical-align: center;
+}
+
+
+
+
+  .container {
+  display: flex;
+  }
+
+
+     .boxed {
+     background-color: rgba (0, 0, 0, 0.7);
+     margin-top: 100px;
+     margin-bottom: 100px;
+     padding: 100px;
+    text-align: justify;
+    test-justify: inter-word;
+    font-family: "Courier New";
+    font-weight: bold;
+    color: black;
+    flex: 1;
+    }
+
+
+.image1 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 10px; /* Add some margin between text and image */
+}
+
+
+ .image1 img {
+ max-width: 100%; /* Ensure image doesn't exceed its container witdh */
+ }
+
+
+
+
+.intro{
+  flex:1;
+
+
+}
+
+
+
+
+header {
+  text-align: center;
+  padding: 100px;
+  background: linear-gradient (135deg, #d6c6c2, #c9b3a2); /* Gradient from colar to peach */
+  color: black;
+}
+
+
+ .logoo {
+    width: 250px;
+ }
+
+
+ nav ul {
+    list-style-type: none;
+    padding: 120;
+ }
+
+
+ nav ul li {
+    display: inline;
+    margin: 0 15px;
+ }
+
+
+ nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+ }
+
+
+ section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f0ecec; /* White background for sections */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+ }
+
+
+ .faq-items {
+    margin: 10px 0;
+ }
+
+
+ .faq-question {
+    cursor: pointer;
+    color: #6c4845; /* Coral color for questions */
+ }
+
+
+ .faq-answer {
+    display: none;
+    margin-top: 5px;
+    color: #333; /* Darker text for answers */
+ }
+
+
+ footer {
+    text-align: center;
+    padding: 100px;
+    background: linear-gradient (135deg, #6a11cb, #2575fc); /* Gradient from purple to blue */
+    color: black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+ }
+
+
+ /* Add colorful borders to sections */
+ section:nth-child(odd) {
+    border-left: 5px solid #6c4845; /* Coral */
+ }
+
+
+ section:nth-child(even) {
+    border-left: 5px solid #6c4845; /* Purple */
+ }
+
+
+ /* Fade-in effect for sections */
+ .frade-in {
+    animation: fadeIn 0.5s ease-in;
+ }
+
+
+ @keyframes fadeIn {
+    from {
+        opacity 0;
+    }
+    to {
+        opacity: 1;
+    }
+ }
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    height: 400px; /* Should be removed only for demonstration */
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.company {
+    top: 30%;
+    position: relative;
+}
